@@ -10,7 +10,7 @@ textarea {
 
 body {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.5em;
 }
 
@@ -42,34 +42,128 @@ html {
     min-width: 320px;
 }
 
-body>header {
-    h1 {
-        @extend .ir;
-        background: url('/img/logo-280.png') no-repeat center top;
-        height: 185px;
-        margin: 20px;
-    }
-}
-
-#linkedin {
-    a {
-        color: #FFF;
-        background-color: #929497;
-        display: block;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        line-height: 2em;
-        box-shadow: inset 0 0 2em rgba(0,0,0,0.3);
-        transition: background-color 0.3s;
+body {
+    background-color: #EEE;
+    
+    &>header {
+        background-color: #FFF;
+        border-bottom: 1px solid #DDD;
         
-        &:hover {
-            transition: background-color 0.3s;
-            background-color: #007BB6;
+        h1 {
+            @extend .ir;
+            font-size: 1em;
+            background: url('/img/logo-280.png') no-repeat left top;
+            margin: 0 auto;
+            height: 185px;
+            min-width: 253px;
+            max-width: 400px;
         }
     }
 }
 
+a {
+    color: #007BB6;
+    &:hover {
+        color: #F7982A;
+        transition: color 0.3s;
+    }
+}
+
+#contact {
+    list-style-type: none;
+    margin: 2em auto 0 auto;
+    padding: 0;
+    color: #007BB6;
+    max-width: 400px;
+    
+    li {
+        margin: 1em 0 0 0;
+    }
+    
+    i {
+        text-decoration: none;
+        display: inline-block;
+        width: 1.5em;
+    }
+}
+
+body>header,
+section {
+    padding: 2em;
+}
+
+section {
+    @extend .clearfix;
+    margin-bottom: 2em;
+    color: #777;
+    position: relative;
+    max-width: 400px;
+    
+    header {
+        h2 {
+            font-family: 'Coustard', serif;
+            font-weight: 400;
+            font-size: 2em;
+            line-height: 0.93em;
+            margin: 0;
+        }
+        
+        h3 {
+            font-weight: 600;
+            font-size: 1.1em;
+            line-height: 1em;
+            margin: 0.3em 0 0 0;
+        }
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 1em;
+    }
+    
+    .link {
+        display: block;
+        margin: 1em 0;
+        padding: 0 0.4em;
+        
+        i {
+            text-decoration: none;
+            display: inline-block;
+            width: 1.5em;
+        }
+    }
+    
+    p {
+        margin: 0.6em 0;
+    }
+    
+    .tags {
+        @extend .clearfix;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 1em;
+        
+        li {
+            display: block;
+            float: left;
+            font-size: 0.8em;
+            padding: 0.1em 0.5em;
+            margin: 0 0.5em 0.5em 0;
+            background-color: #F7982A;
+            color: #FFF;
+        }
+    }
+    
+    h4 {
+        margin: 1em 0 0 0;
+    }
+    
+    .awards {
+        margin: 0 0 1em 0;
+    }
+}
 
 
 /* ==========================================================================
@@ -179,8 +273,59 @@ body>header {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 30em) {
+    body>header,
+    section {
+        padding: 3em;
+        margin: 0 auto;
+    }
+    
+    section {
+        header {
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    body {
+        background-color: #EEE;
+        margin-left: 349px;
+        padding-top: 2em;
+        padding-bottom: 8em;
+        
+        &>header {
+            background-color: #FFF;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            border-bottom: none;
+            border-right: 1px solid #DDD;
+        }
+    }
+    
     /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (min-width: 70em) {
+    section {
+        max-width: 100%;
+        
+        .info {
+            width: 50%;
+            float: left;
+            clear: left;
+        }
+        
+        .images {
+            margin-left: 50%;
+            padding-left: 1em;
+            max-width: 400px;
+        }
+    }
 }
 
 @media print,
