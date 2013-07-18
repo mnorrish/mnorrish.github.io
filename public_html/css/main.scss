@@ -70,21 +70,32 @@ a {
 }
 
 #contact {
-    list-style-type: none;
-    margin: 2em auto 0 auto;
-    padding: 0;
-    color: #007BB6;
-    max-width: 400px;
+  @extend .clearfix;
+  list-style-type: none;
+  padding: 0;
+  color: #007BB6;
+  margin: 2em auto 0 auto;
+  max-width: 400px;
+  
+  li {
+    float: left;
+    margin: 1em 0.6em 0 0;
     
-    li {
-        margin: 1em 0 0 0;
+    &:first-child {
+      margin-left: 1em;
     }
-    
-    i {
-        text-decoration: none;
-        display: inline-block;
-        width: 1.5em;
-    }
+  }
+  
+  i {
+    text-decoration: none;
+    display: inline-block;
+    width: 1.5em;
+    font-size: 1.6em;
+  }
+  
+  span {
+    @extend .visuallyhidden;
+  }
 }
 
 body>header,
