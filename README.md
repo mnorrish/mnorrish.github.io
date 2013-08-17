@@ -1,4 +1,4 @@
-mnorrish
+mnorrish.github.io
 ========
 
-Matt Norrish's portfolio
+Matt Norrish's web design and development portfolio.
