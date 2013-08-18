@@ -3,13 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Matt Norrish -- Designer and Developer
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    HTML
+    CSS, Normalize.css
+    Schema.org
+    Modernizr
+    Font Awesome, Coustard
