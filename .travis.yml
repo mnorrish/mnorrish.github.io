@@ -8,6 +8,7 @@ script:
 after_success:
 - npm test
 deploy:
+  local-dir: dist
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
