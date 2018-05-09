@@ -4,4 +4,6 @@ node_js:
 install:
 - npm i
 script:
-- nuxt generate
+- npm run generate
+test:
+- npm test

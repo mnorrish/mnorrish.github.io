@@ -9,6 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "serve:static": "static ./dist",
+    "test": "jest",
+    "test:debug": "HEADLESS=true npm test",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
@@ -24,7 +27,12 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.5.0",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
+    "jest-puppeteer": "3.0.1",
+    "node-static": "0.7.10",
     "prettier": "^1.12.1",
+    "puppeteer": "^1.4.0",
     "stylus": "0.54.*",
     "stylus-loader": "^3.0.2"
   }
