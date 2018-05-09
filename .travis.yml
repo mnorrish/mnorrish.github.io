@@ -14,4 +14,4 @@ deploy:
   github-token: $GITHUB_TOKEN
   target-branch: master
   on:
-    branch: deloy
+    branch: deploy
