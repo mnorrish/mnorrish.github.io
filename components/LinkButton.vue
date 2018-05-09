@@ -26,15 +26,15 @@ export default {
 .linkButton {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid #dd8800;
+  color: #dd8800;
   text-decoration: none;
   padding: 10px 30px;
   text-align: center;
 }
 
 .linkButton:hover {
-  color: #fff;
-  background-color: #3b8070;
+  color: #ffffff;
+  background-color: #dd8800;
 }
 </style>

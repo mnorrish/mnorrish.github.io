@@ -36,30 +36,27 @@ export default {
 .content
   width: 100%
   margin: 2rem
+  transition: margin 300ms
 
 .title
-  font-family: "adelle", serif
+  font-family: adelle, serif
   display: block
   font-weight: 600
   font-size: 2rem
-  color: #35495e
+  color: #ffffff
   line-height: 1em
-
-  font-variant-ligatures: common-ligatures
-  -moz-font-feature-settings: "liga", "clig"
-  -webkit-font-feature-settings: "liga", "clig"
-  font-feature-settings: "liga", "clig"
 
 .subtitle
   font-weight: 300
   font-size: 1.4rem
-  color: #526488
+  color: #ffffff
   margin-bottom: 15px
   line-height: 1em
   margin-bottom: 1em
 
 .links
   display: flex
+  max-width: 360px;
 
 .link
   flex-grow: 1
@@ -74,11 +71,11 @@ export default {
   line-height: 1em
 
 .email a
-  color: #3b8070
+  color: #dd8800
   text-decoration: none
 
 .email a:hover
-  text-decoration: underline
+  color: #ffffff
 
 @media screen and (min-width: 500px)
   .title
@@ -87,9 +84,6 @@ export default {
 
   .subtitle
     font-size: 2.1rem
-
-  .link
-    flex-grow: 0
 
 @media screen and (min-width: 1200px)
   .title
