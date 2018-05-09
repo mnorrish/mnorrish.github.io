@@ -1,0 +1,23 @@
+{
+  "name": "mnorrish.github.io",
+  "version": "0.0.0",
+  "description": "Website for MNorrish",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnorrish/mnorrish.github.io.git"
+  },
+  "author": "Matthew Norrish <matt@mnorrish.co.nz> (https://github.com/mnorrish)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnorrish/mnorrish.github.io/issues"
+  },
+  "homepage": "https://github.com/mnorrish/mnorrish.github.io#readme",
+  "private": true,
+  "devDependencies": {
+    "vue-cli": "2.9.3"
+  }
+}
