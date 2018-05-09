@@ -3,7 +3,7 @@
     <div class="content">
       <h1 class="title">Matthew Norrish</h1>
       <h2 class="subtitle">Software developer</h2>
-      <a href="mailto:matt@mnorrish.co.nz" class="email">matt@mnorrish.co.nz</a>
+      <div class="email"><a href="mailto:matt@mnorrish.co.nz">matt@mnorrish.co.nz</a></div>
       <div class="links">
         <link-button href="https://github.com/mnorrish" class="link">GitHub</link-button>
         <link-button href="https://linkedin.com/in/mnorrish" class="link">LinkedIn</link-button>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import LinkButton from '../components/LinkButton';
+import LinkButton from '~/components/LinkButton';
 
 export default {
   components: {
@@ -22,88 +22,79 @@ export default {
 }
 </script>
 
-<style scoped>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+<style scoped lang="stylus">
+.container
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: flex-end
 
-.content {
-  width: 100%;
-  margin: 2rem;
-}
+.content
+  width: 100%
+  margin: 2rem
 
-.title {
-  font-family: "Source Sans Pro", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 2rem;
-  color: #35495e;
-}
+.title
+  font-family: "adelle", serif
+  display: block
+  font-weight: 600
+  font-size: 2rem
+  color: #35495e
+  line-height: 1em
 
-.subtitle {
-  font-weight: 300;
-  font-size: 1rem;
-  color: #526488;
-  margin-bottom: 15px;
-}
+  font-variant-ligatures: common-ligatures
+  -moz-font-feature-settings: "liga", "clig"
+  -webkit-font-feature-settings: "liga", "clig"
+  font-feature-settings: "liga", "clig"
 
-.links {
-  display: flex;
-}
+.subtitle
+  font-weight: 300
+  font-size: 1.4rem
+  color: #526488
+  margin-bottom: 15px
+  line-height: 1em
+  margin-bottom: 1em
 
-.link {
-  flex-grow: 1;
-}
+.links
+  display: flex
 
-.link + .link {
-  margin-left: 12px;
-}
+.link
+  flex-grow: 1
 
-.email {
-  display: block;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #3b8070;
-  text-decoration: none;
-  margin-bottom: 20px;
-}
+.link + .link
+  margin-left: 12px
 
-.email:hover {
-  text-decoration: underline;
-}
+.email
+  font-weight: 300
+  font-size: 1rem
+  margin-bottom: 20px
+  line-height: 1em
 
-@media screen and (min-width: 480px) {
-  .title {
-    font-size: 3rem;
-  }
+.email a
+  color: #3b8070
+  text-decoration: none
 
-  .subtitle {
-    font-size: 1.5rem;
-  }
+.email a:hover
+  text-decoration: underline
 
-  .content {
-    margin-left: 3rem;
-  }
+@media screen and (min-width: 500px)
+  .title
+    font-size: 3rem
+    letter-spacing: -1px
 
-  .link {
-    flex-grow: 0;
-  }
-}
+  .subtitle
+    font-size: 2.1rem
 
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 4rem;
-  }
+  .link
+    flex-grow: 0
 
-  .subtitle {
-    font-size: 2rem;
-  }
+@media screen and (min-width: 1200px)
+  .title
+    font-size: 4rem
+    letter-spacing: -2px
 
-  .content {
-    margin-left: 4rem;
-  }
-}
+  .subtitle
+    font-size: 2.8rem
+
+  .content
+    margin: 4rem
 </style>
