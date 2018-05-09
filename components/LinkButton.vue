@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .linkButton {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 3px;
   border: 1px solid #dd8800;
   color: #dd8800;
   text-decoration: none;
