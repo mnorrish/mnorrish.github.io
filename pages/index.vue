@@ -60,22 +60,22 @@ export default {
 
 .link
   flex-grow: 1
-
-.link + .link
-  margin-left: 12px
+  
+  & + .link
+    margin-left: 12px
 
 .email
   font-weight: 300
   font-size: 1rem
   margin-bottom: 20px
   line-height: 1em
+  
+  a
+    color: #dd8800
+    text-decoration: none
 
-.email a
-  color: #dd8800
-  text-decoration: none
-
-.email a:hover
-  color: #ffffff
+    &:hover
+      color: #ffffff
 
 @media screen and (min-width: 500px)
   .title

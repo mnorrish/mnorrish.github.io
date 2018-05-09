@@ -22,19 +22,17 @@ export default {
 };
 </script>
 
-<style scoped>
-.linkButton {
-  display: inline-block;
-  border-radius: 3px;
-  border: 1px solid #dd8800;
-  color: #dd8800;
-  text-decoration: none;
-  padding: 10px 30px;
-  text-align: center;
-}
+<style scoped lang="stylus">
+.linkButton
+  display: inline-block
+  border-radius: 3px
+  border: 1px solid #dd8800
+  color: #dd8800
+  text-decoration: none
+  padding: 10px 30px
+  text-align: center
 
-.linkButton:hover {
-  color: #ffffff;
-  background-color: #dd8800;
-}
+  &:hover
+    color: #ffffff
+    background-color: #dd8800
 </style>
