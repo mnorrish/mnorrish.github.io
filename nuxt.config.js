@@ -6,8 +6,8 @@ module.exports = {
     title: "Matthew Norrish | Software Developer",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" }
-    ]
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    ],
   },
   /*
   ** Customize the progress bar color
@@ -26,9 +26,9 @@ module.exports = {
           enforce: "pre",
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         });
       }
-    }
-  }
+    },
+  },
 };

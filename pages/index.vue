@@ -21,8 +21,8 @@ import LinkButton from "~/components/LinkButton";
 
 export default {
   components: {
-    LinkButton
-  }
+    LinkButton,
+  },
 };
 </script>
 
