@@ -5,21 +5,25 @@
       <h2 class="subtitle">Software developer</h2>
       <div class="email"><a href="mailto:matt@mnorrish.co.nz">matt@mnorrish.co.nz</a></div>
       <div class="links">
-        <link-button href="https://github.com/mnorrish" class="link">GitHub</link-button>
-        <link-button href="https://linkedin.com/in/mnorrish" class="link">LinkedIn</link-button>
+        <link-button 
+          href="https://github.com/mnorrish" 
+          class="link">GitHub</link-button>
+        <link-button 
+          href="https://linkedin.com/in/mnorrish" 
+          class="link">LinkedIn</link-button>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import LinkButton from '~/components/LinkButton';
+import LinkButton from "~/components/LinkButton";
 
 export default {
   components: {
-    LinkButton,
+    LinkButton
   }
-}
+};
 </script>
 
 <style scoped lang="stylus">

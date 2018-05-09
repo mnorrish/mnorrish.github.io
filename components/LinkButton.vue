@@ -1,13 +1,25 @@
 <template>
-  <a class="linkButton" :href="href" target="_blank">
+  <a 
+    :href="href" 
+    :target="target" 
+    class="linkButton">
     <slot />
   </a>
 </template>
 
 <script>
 export default {
-  props: ['href'],
-}
+  props: {
+    href: {
+      type: String,
+      default: "#"
+    },
+    target: {
+      type: String,
+      default: "_blank"
+    }
+  }
+};
 </script>
 
 <style scoped>
