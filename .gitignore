@@ -1,2 +1,11 @@
+# dependencies
 node_modules
-npm-debug.log*
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist

@@ -1,23 +1,25 @@
 {
   "name": "mnorrish.github.io",
-  "version": "0.0.0",
-  "description": "Website for MNorrish",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mnorrish/mnorrish.github.io.git"
-  },
+  "version": "1.0.0",
+  "description": "Website for Matthew NNorrish",
   "author": "Matthew Norrish <matt@mnorrish.co.nz> (https://github.com/mnorrish)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mnorrish/mnorrish.github.io/issues"
-  },
-  "homepage": "https://github.com/mnorrish/mnorrish.github.io#readme",
   "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0"
+  },
   "devDependencies": {
-    "vue-cli": "2.9.3"
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
