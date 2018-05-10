@@ -1,8 +1,6 @@
 <template>
   <a 
     :href="href"
-    :target="target"
-    class="linkButton"
     @click="click"
     @mouseover="mouseover">
     <slot />
@@ -10,17 +8,22 @@
 </template>
 
 <script>
-const BLANK = "_blank";
-
 export default {
   props: {
-    href: {
+    email: {
       type: String,
-      default: "#",
+      required: true,
     },
-    target: {
+    subject: {
       type: String,
-      default: BLANK,
+      default: "",
+    },
+  },
+  computed: {
+    href() {
+      let href = `mailto:${this.email}`;
+      if (this.subject) href += `?subject=${encodeURIComponent(this.subject)}`;
+      return href;
     },
   },
   methods: {
@@ -28,16 +31,16 @@ export default {
       this.$ga.event({
         eventCategory: "link",
         eventAction: "click",
-        eventLabel: this.target,
-        eventValue: this.href,
+        eventLabel: "email",
+        eventValue: this.email,
       });
     },
     mouseover() {
       this.$ga.event({
         eventCategory: "link",
         eventAction: "mouseover",
-        eventLabel: this.target,
-        eventValue: this.href,
+        eventLabel: "email",
+        eventValue: this.email,
       });
     },
   },
@@ -45,16 +48,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.linkButton
-  display: inline-block
-  border-radius: 3px
-  border: 1px solid #dd8800
-  color: #dd8800
-  text-decoration: none
-  padding: 0.5em 1.5em
-  text-align: center
 
-  &:hover
-    color: #ffffff
-    background-color: #dd8800
 </style>
