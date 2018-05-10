@@ -1,8 +1,10 @@
 <template>
   <section class="container">
     <div class="content">
-      <h1 class="title">Matthew Norrish</h1>
-      <h2 class="subtitle">Software developer</h2>
+      <page-title>
+        <template slot="title">Matthew Norrish</template>
+        <template slot="subtitle">Software developer</template>
+      </page-title>
       <div class="email"><a href="mailto:matt@mnorrish.co.nz">matt@mnorrish.co.nz</a></div>
       <div class="links">
         <link-button 
@@ -17,10 +19,12 @@
 </template>
 
 <script>
+import Title from "~/components/Title";
 import LinkButton from "~/components/LinkButton";
 
 export default {
   components: {
+    "page-title": Title,
     LinkButton,
   },
 };
@@ -36,22 +40,6 @@ export default {
 .content
   width: 100%
   margin: 2rem
-
-.title
-  font-family: adelle, serif
-  display: block
-  font-weight: 600
-  font-size: 2rem
-  color: #ffffff
-  line-height: 1em
-
-.subtitle
-  font-weight: 300
-  font-size: 1.4rem
-  color: #ffffff
-  margin-bottom: 15px
-  line-height: 1em
-  margin-bottom: 1em
 
 .links
   display: flex
@@ -76,24 +64,9 @@ export default {
     &:hover
       color: #ffffff
 
-@media screen and (min-width: 500px)
-  .title
-    font-size: 3rem
-    letter-spacing: -1px
-
-  .subtitle
-    font-size: 2.1rem
-
 @media screen and (min-width: 1200px)
   .container
     align-items: flex-end
-
-  .title
-    font-size: 4rem
-    letter-spacing: -2px
-
-  .subtitle
-    font-size: 2.8rem
 
   .content
     margin: 4rem
