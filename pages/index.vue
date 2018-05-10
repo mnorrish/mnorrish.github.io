@@ -76,7 +76,7 @@ export default {
 
   .main
     display: flex
-    align-items: flex-start
+    align-items: center
 
     .info
       flex-grow: 1

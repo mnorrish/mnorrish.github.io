@@ -29,7 +29,7 @@ export default {
   border: 1px solid #dd8800
   color: #dd8800
   text-decoration: none
-  padding: 10px 30px
+  padding: 0.5em 1.5em
   text-align: center
 
   &:hover
