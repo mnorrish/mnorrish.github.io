@@ -22,4 +22,8 @@ module.exports = {
   build: {},
 
   plugins: [{ src: "~/plugins/vue-analytics", ssr: false }],
+
+  env: {
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID || "UA-XXXXXXXX-X",
+  },
 };
