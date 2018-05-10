@@ -5,14 +5,19 @@
         <template slot="title">Matthew Norrish</template>
         <template slot="subtitle">Software developer</template>
       </page-title>
-      <div class="email"><a href="mailto:matt@mnorrish.co.nz">matt@mnorrish.co.nz</a></div>
-      <div class="links">
-        <link-button 
-          href="https://github.com/mnorrish" 
-          class="link">GitHub</link-button>
-        <link-button 
-          href="https://linkedin.com/in/mnorrish" 
-          class="link">LinkedIn</link-button>
+      <div class="main">
+        <div class="info">
+          <p class="location">Based in Dunedin, New Zealand</p>
+          <p class="email"><a href="mailto:matt@mnorrish.co.nz">matt@mnorrish.co.nz</a></p>
+        </div>
+        <div class="links">
+          <link-button 
+            href="https://github.com/mnorrish" 
+            class="link">GitHub</link-button>
+          <link-button 
+            href="https://linkedin.com/in/mnorrish" 
+            class="link">LinkedIn</link-button>
+        </div>
       </div>
     </div>
   </section>
@@ -51,12 +56,10 @@ export default {
   & + .link
     margin-left: 12px
 
-.email
-  font-weight: 300
+.info
   font-size: 1rem
-  margin-bottom: 20px
-  line-height: 1em
-  
+  margin-bottom: 1em
+
   a
     color: #dd8800
     text-decoration: none
@@ -70,4 +73,12 @@ export default {
 
   .content
     margin: 4rem
+
+  .main
+    display: flex
+    align-items: flex-start
+
+    .info
+      flex-grow: 1
+      margin-bottom: 0
 </style>

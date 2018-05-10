@@ -12,6 +12,7 @@ html
   color: #ffffff
   font-family: lato, sans-serif
   font-size: 18px
+  line-height: 1.4em
   font-weight: 300
   word-spacing: 1px
   -ms-text-size-adjust: 100%
