@@ -31,12 +31,11 @@ export default {
   min-height: 100vh
   display: flex
   justify-content: center
-  align-items: flex-end
+  align-items: center
 
 .content
   width: 100%
   margin: 2rem
-  transition: margin 300ms
 
 .title
   font-family: adelle, serif
@@ -86,6 +85,9 @@ export default {
     font-size: 2.1rem
 
 @media screen and (min-width: 1200px)
+  .container
+    align-items: flex-end
+
   .title
     font-size: 4rem
     letter-spacing: -2px

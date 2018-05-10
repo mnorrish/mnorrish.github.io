@@ -19,7 +19,6 @@ html
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
   box-sizing: border-box
-  transition: font-size 300ms
 
 *, *:before, *:after
   box-sizing: border-box
