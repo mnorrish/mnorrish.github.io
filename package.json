@@ -12,9 +12,14 @@
     "serve:static": "static ./dist",
     "test": "jest",
     "test:debug": "HEADLESS=true npm test",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore",
+    "lint:all": "npm run lint -- .",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:fix:all": "npm run lint:fix -- .",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": ["npm run lint:fix --", "git add"]
   },
   "dependencies": {
     "nuxt": "^1.0.0"
@@ -27,10 +32,12 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.5.0",
+    "husky": "0.14.*",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
-    "jest-puppeteer": "3.0.1",
-    "node-static": "0.7.10",
+    "jest-puppeteer": "^3.0.1",
+    "lint-staged": "^7.1.0",
+    "node-static": "0.7.*",
     "prettier": "^1.12.1",
     "puppeteer": "^1.4.0",
     "stylus": "0.54.*",
