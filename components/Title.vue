@@ -1,10 +1,10 @@
 <template>
   <header>
     <h1 class="title">
-      <slot name="title"/>
+      <slot name="title" />
     </h1>
     <h2 class="subtitle">
-      <slot name="subtitle"/>
+      <slot name="subtitle" />
     </h2>
   </header>
 </template>
