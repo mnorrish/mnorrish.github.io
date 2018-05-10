@@ -19,10 +19,14 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,vue}": ["npm run lint:fix --", "git add"]
+    "*.{js,vue}": [
+      "npm run lint:fix --",
+      "git add"
+    ]
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue-analytics": "^5.10.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",

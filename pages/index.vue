@@ -8,7 +8,12 @@
       <div class="main">
         <div class="info">
           <p class="location">Based in Dunedin, New Zealand</p>
-          <p class="email"><a href="mailto:matt@mnorrish.co.nz">matt@mnorrish.co.nz</a></p>
+          <p class="email">
+            <link-email 
+              email="matt@mnorrish.co.nz" 
+              subject="Software development" 
+              class="linkEmail">matt@mnorrish.co.nz</link-email>
+          </p>
         </div>
         <div class="links">
           <link-button 
@@ -26,11 +31,13 @@
 <script>
 import Title from "~/components/Title";
 import LinkButton from "~/components/LinkButton";
+import LinkEmail from "~/components/LinkEmail";
 
 export default {
   components: {
     "page-title": Title,
     LinkButton,
+    LinkEmail,
   },
 };
 </script>
@@ -60,7 +67,7 @@ export default {
   font-size: 1rem
   margin-bottom: 1em
 
-  a
+  .linkEmail
     color: #dd8800
     text-decoration: none
 
